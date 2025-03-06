@@ -16,7 +16,7 @@ app.set("views", path.join(__dirname, "views"));
 var accessLogStream = fs.createWriteStream(path.join(__dirname, "access.log"), {
   flags: "a",
 });
-app.use(morgan("tiny", { stream: accessLogStream }));
+app.use(morgan("combined", { stream: accessLogStream }));
 
 let comments = [
   {

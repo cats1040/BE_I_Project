@@ -1,4 +1,1 @@
-GET /comments 200 4172 - 14.483 ms
-GET /comments 304 - - 3.421 ms
-GET /comments 304 - - 1.439 ms
-GET /comments/a0a56db7-cc66-4f6a-823d-9d0c675b6b68 200 643 - 2.182 ms
+::1 - - [06/Mar/2025:09:52:37 +0000] "GET /comments/dd81484d-ae96-47db-9652-07275114c9bf HTTP/1.1" 200 1712 "http://localhost:3000/comments" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36"
