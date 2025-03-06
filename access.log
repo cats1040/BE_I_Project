@@ -1,0 +1,4 @@
+GET /comments 200 4172 - 14.483 ms
+GET /comments 304 - - 3.421 ms
+GET /comments 304 - - 1.439 ms
+GET /comments/a0a56db7-cc66-4f6a-823d-9d0c675b6b68 200 643 - 2.182 ms
