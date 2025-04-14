@@ -1,0 +1,36 @@
+.navContainer {
+    padding: 0.4em;
+    width: 100%;
+    background-image: linear-gradient(to right, #2a81d7, #3b92e3);
+
+    border-top: 2px solid #e5e7eb;
+    border-left: 2px solid #e5e7eb;
+    border-right: 2px solid #e5e7eb;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e5e7eb;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 5;
+}
+
+.navTitle {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.navIcons:hover {
+    cursor: pointer;
+}

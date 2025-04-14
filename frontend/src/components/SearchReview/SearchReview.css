@@ -1,0 +1,27 @@
+.searchReviewContainer {
+    margin: 4em 0;
+}
+
+.reviewSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewSearch input[type="text"] {
+    padding: 1em;
+    width: 60%;
+    margin: 0 0 0 1em;
+}
+
+.filterReview {
+    width: 40%;
+    margin: 0 2em 0 0;
+}
+
+.reviewSearch button {
+    padding: 1em;
+    margin-left: 1em;
+
+    width: 100%;
+}

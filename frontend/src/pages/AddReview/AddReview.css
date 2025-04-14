@@ -1,0 +1,32 @@
+.addReviewContainer {
+    /* border: 2px solid red; */
+    
+    max-width: 60%;
+    margin: auto;
+
+    margin-top: 200px;
+    margin-bottom: 6em;
+}
+
+.addReviewContainer #reviewTitle, #reviewText, #username {
+    padding: 0.5em 0.5em;
+}
+
+.addReviewContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.addReviewContainer form #reviewTitle {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.addReviewContainer form #reviewText {
+    width: 100px;
+}
+
+.addReviewContainer form button {
+    padding: 1em 0;
+}
