@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import "./AddReview.css"
 import { faWindowMaximize } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default function AddReview() {
   return (
@@ -18,8 +19,10 @@ export default function AddReview() {
 
             <textarea name="reviewText" id="reviewText" rows={10} cols={10} placeholder='Review here' required></textarea>
 
-            <button>Submit</button>
+            <button>SUBMIT</button>
         </form>
+
+        <Link to="/reviews" className='addReviewHomeBtn'><button>HOME</button></Link>
     </div>
 
     <Footer/>

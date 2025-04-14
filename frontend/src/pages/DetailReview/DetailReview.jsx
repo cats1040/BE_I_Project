@@ -22,6 +22,7 @@ export default function DetailReview() {
   return (
     <>
         <Header title={review.reviewTitle} />
+
         <div className="detailReviewContainer">
             <h2 style={{fontSize:"2em"}}>{review.reviewTitle}</h2>
             <p>{review.reviewText}</p>
@@ -30,10 +31,9 @@ export default function DetailReview() {
 
             <div className="detailReviewBtns">
                 <Link to={`/reviews/${id}/edit`}><button className='detailReviewEdit'>Edit</button></Link>
-                <button className='detailReviewDelete'>Delete</button>
+                <form action={`http://localhost:8080/reviews/${id}?_method=DELETE`} method='POST'><button className='detailReviewDelete'>Delete</button></form>
             </div>
         </div>
-
 
         <Footer />
     </>

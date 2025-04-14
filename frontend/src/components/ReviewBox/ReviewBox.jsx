@@ -18,7 +18,7 @@ export default function ReviewBox(props) {
                 <div className="reviewBoxRight">
                     <p className="subTitle">{props.review.username}</p>
                     <p className='reviewDatePublished'>{props.review.date}</p>
-                    <p className='reviewShorten'>{props.review.reviewText.substring(0, 200)} ...</p>
+                    <p className='reviewShorten'>{props.review.reviewText.substring(0, 300)} ...</p>
 
                     <div className="reviewTags">
                         tags here

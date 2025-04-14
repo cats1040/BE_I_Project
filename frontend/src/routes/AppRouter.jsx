@@ -12,7 +12,7 @@ import EditReview from '../pages/EditReview/EditReview';
 export default function AppRouter() {
   return (
     <Routes> 
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Login/>} />
         <Route path="/reviews" element={<AllReviews/>} />
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/addReview" element={<AddReview />} />

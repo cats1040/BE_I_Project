@@ -94,7 +94,14 @@ app.patch("/reviews/:id", (req, res) => {
   const foundReview = reviews.find((c) => c.id === id);
   foundReview.reviewText = reviewText;
   foundReview.reviewTitle = reviewTitle;
+  foundReview.date = new Date();
 
+  res.redirect("http://localhost:3000/reviews");
+});
+
+app.delete("/reviews/:id", (req, res) => {
+  const { id } = req.params;
+  reviews = reviews.filter((c) => c.id !== id);
   res.redirect("http://localhost:3000/reviews");
 });
 
