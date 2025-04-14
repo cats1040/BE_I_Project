@@ -10,11 +10,9 @@
 
 # Technologies Used
 
-- Express.js: Backend framework for handling server-side logic.
+- Frontend: React.js (for building the user interface)
 
-- EJS (Embedded JavaScript): Templating engine for rendering dynamic content.
-
-- JavaScript: Handling CRUD operations.
+- Backend: Node.js with Express.js (for handling API requests)
 
 # Installation & Setup
 
@@ -26,15 +24,29 @@
 
 `cd BE_I_Project`
 
-3. Install dependencies:
+3. Install the frontend dependencies:
 
+`cd frontend`
 `npm install`
 
-4. Start the server:
+4. Install the backend dependencies:
 
-`node server.js`
+`cd backend`
+`npm install`
 
-5. Open your browser and go to:
+5. Run the application:
+
+- Frontend (React app):
+    `cd frontend`
+    `npm run start`
+    This will start the React development server at `http://localhost:3000`
+
+- Backend (Node.js with Express):
+    `cd backend`
+    `nodemon server.js`
+    This will start the backend server at `http://localhost:8080`
+
+6. Visit the app in your browser 
 
 `http://localhost:3000`
 
