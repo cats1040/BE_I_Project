@@ -37,14 +37,14 @@
 5. Run the application:
 
 - Frontend (React app):
-    `cd frontend`
-    `npm run start`
-    This will start the React development server at `http://localhost:3000`
+    - `cd frontend`
+    - `npm run start`
+    - This will start the React development server at `http://localhost:3000`
 
 - Backend (Node.js with Express):
-    `cd backend`
-    `nodemon server.js`
-    This will start the backend server at `http://localhost:8080`
+    - `cd backend`
+    - `nodemon server.js`
+    - This will start the backend server at `http://localhost:8080`
 
 6. Visit the app in your browser 
 
