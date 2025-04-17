@@ -25,8 +25,8 @@ export default function DetailReview() {
 
         <div className="detailReviewContainer">
             <h2 style={{fontSize:"2em"}}>{review.reviewTitle}</h2>
-            <p>{review.reviewText}</p>
-            <p>{review.date}</p>
+            <p style={{whiteSpace:"pre-wrap", }}>{review.reviewText}</p>
+            <p><b>{review.date}</b></p>
             <p style={{fontWeight:"700"}}>- {review.username}</p>
 
             <div className="detailReviewBtns">

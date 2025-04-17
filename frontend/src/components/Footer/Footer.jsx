@@ -25,7 +25,7 @@ export default function Footer() {
 
           <div className="footerMenuHidden">
             <ul style={{listStyle:"none"}}>
-              <li><span className="footerMenuIcon"><FontAwesomeIcon icon={faUser} /></span> Profile</li>
+              <li><Link to = "/profile"><span className="footerMenuIcon"><FontAwesomeIcon icon={faUser} /></span> Profile</Link></li>
               <li><Link to="/reviews"><span className="footerMenuIcon"><FontAwesomeIcon icon={faHome}></FontAwesomeIcon></span> Home</Link></li>
               <li><span className="footerMenuIcon"><FontAwesomeIcon icon={faFolder} /></span> My Reviews</li>
               <li><span className="footerMenuIcon"><FontAwesomeIcon icon={faStar} /></span>Favourites</li>
