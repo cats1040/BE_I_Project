@@ -192,28 +192,37 @@ app.get("/reviews/:id", (req, res) => {
   res.send(review);
 });
 
-app.post("/reviews/register", (req, res) => {
+app.post("/reviews/register", (req, res, next) => {
 
   console.log("REGISTER PAGE")
 
-  const {email, username, password} = req.body;
+  try {
+    const {email, username, password} = req.body;
 
-  let present = false;
-  users.forEach(user => {
-    if (user.email == email) {
-      present = true;
+    if (!email || !username || !password) {
+      throw new Error("All fields are required");
     }
-  })
 
-  
-  if (present) {
-    return res.status(400).json({ error: "User already exists" });
+    let present = false;
+    users.forEach(user => {
+      if (user.email == email) {
+        present = true;
+      }
+    })
+
+    
+    if (present) {
+      return res.status(400).json({ error: "User already exists" });
+    }
+    
+    users.push({email, username, password});
+    console.log(users);
+    res.redirect("http://localhost:3000/login");
   }
-  
-  users.push({email, username, password});
-  console.log(users);
-  res.redirect("http://localhost:3000/login");
-})
+  catch (err) {
+    next(err);
+  }
+});
 
 app.post("/reviews/login", (req, res) => {   
     const {username, password} = req.body;
@@ -245,6 +254,14 @@ app.delete("/reviews/:id", (req, res) => {
   const { id } = req.params;
   reviews = reviews.filter((c) => c.id !== id);
   res.redirect("http://localhost:3000/reviews");
+});
+
+app.use((err, req, res, next) => {
+  console.error("Error:", err.message);
+  res.status(err.status || 500).json({
+    success: false,
+    message: err.message || "Internal Server Error",
+  });
 });
 
 app.listen(8080, () => {

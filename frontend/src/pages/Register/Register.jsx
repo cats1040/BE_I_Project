@@ -21,9 +21,9 @@ export default function Register() {
 
         <div className="registerContainer">
             <form action="http://localhost:8080/reviews/register" method='POST'>
-                <input type="email" name="email" id="email" placeholder='Enter email id' required/>
-                <input type="text" name="username" id="usdeername" placeholder='Username'required/>
-                <input type="password" name="password" id="password" placeholder='Set password' required/>
+                <input type="email" name="email" id="email" placeholder='Enter email id'/>
+                <input type="text" name="username" id="usdeername" placeholder='Username'/>
+                <input type="password" name="password" id="password" placeholder='Set password'/>
                 <button>Register</button>
             </form>
             <Link to="/login"><p className='linkToLoginRegister'>Already have an account?</p></Link>
